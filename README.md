@@ -61,6 +61,7 @@
 
 ### その他
 
+- EditorConfig
 - See `Gemfile`.
 
 ## Ruby version
