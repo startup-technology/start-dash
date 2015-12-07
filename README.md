@@ -209,7 +209,8 @@ $ bundle exec slim-lint
 
 ### Reset database
 
-- Execute db:drop, db:db:create,db:migrate, db:seed_fu
+- Execute db:drop, db:db:create, db:migrate, db:seed_fu
+- See `lib/tasks/db/rest_all.rake`
 
 ```bash
 $ rake db:reset_all
