@@ -1,0 +1,4 @@
+li class="#{'active' if page.current?}"
+  /! rubocop:disable Style/NestedTernaryOperator
+  = link_to page, page.current? ? '#' : url,
+    remote: remote, rel: page.next? ? 'next' : page.prev? ? 'prev' : nil

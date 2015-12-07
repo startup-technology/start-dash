@@ -1,0 +1,4 @@
+exclude:
+  - 'app/views/kaminari/**/*.slim'
+
+linters:

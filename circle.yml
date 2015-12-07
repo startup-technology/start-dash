@@ -1,0 +1,23 @@
+machine:
+  timezone:
+    Asia/Tokyo
+
+  ruby:
+    version: 2.2.2
+
+dependencies:
+  cache_directories:
+    - "vendor/bundle"
+  override:
+    - bundle -j4 --path=vendor/bundle
+  pre:
+    - gem install bundler --pre
+
+database:
+  override:
+    - mv config/database.ci.yml config/database.yml
+    - bundle exec rake db:create db:schema:load --trace
+
+test:
+  override:
+    - bin/rake spec
