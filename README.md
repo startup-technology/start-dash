@@ -13,7 +13,6 @@
 
 - unicorn
 
-
 ### デプロイ
 
 - capistrano
@@ -44,6 +43,10 @@
 ### アップロード
 
 - carrierwave
+
+### バックグラウンドジョブ
+
+- sidekiq
 
 ### コード解析
 
