@@ -7,6 +7,8 @@
     enabled: false
   NestedIterators:
     max_allowed_nesting: 2
+  NilCheck:
+    enabled: false
   PrimaDonnaMethod:
     enabled: false
   TooManyStatements:
