@@ -64,6 +64,8 @@
 - EditorConfig
 - See `Gemfile`.
 
+---
+
 ## Ruby version
 
 - See `.ruby-version`.
@@ -182,6 +184,10 @@ $ bundle exec scss-lint
 ```bash
 $ bundle exec slim-lint
 ```
+
+## EditorConfig
+
+-  ご自身のエディタに[EditorConfig](http://editorconfig.org/)のインストールをお願いします。
 
 ## CI as a service
 
