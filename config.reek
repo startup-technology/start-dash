@@ -1,16 +1,16 @@
 "app":
   Attribute:
     enabled: false
+  IrresponsibleModule:
+    enabled: false
   DuplicateMethodCall:
     max_calls: 2
-  IrresponsibleModule:
+  PrimaDonnaMethod:
     enabled: false
   NestedIterators:
     max_allowed_nesting: 2
-  NilCheck:
-    enabled: false
-  PrimaDonnaMethod:
-    enabled: false
+  TooManyMethods:
+    max_methods: 30
   TooManyStatements:
     max_statements: 30
   UnusedParameters:
