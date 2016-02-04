@@ -66,6 +66,9 @@ gem 'unicorn'
 gem 'unicorn-rails'
 gem 'unicorn-worker-killer'
 
+# Debugger
+gem 'web-console', '~> 2.0', group: :development
+
 group :development, :test do
   gem 'sqlite3'
 
@@ -102,7 +105,6 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-rails'
   gem 'pry-stack_explorer'
-  gem 'web-console', '~> 2.0'
 
   # Logging
   gem 'quiet_assets'

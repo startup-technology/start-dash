@@ -1,22 +1,30 @@
-"app":
-  Attribute:
-    enabled: false
-  IrresponsibleModule:
-    enabled: false
-  DuplicateMethodCall:
-    max_calls: 2
-  PrimaDonnaMethod:
-    enabled: false
+---
+Attribute:
+  enabled: false
+DuplicateMethodCall:
+  max_calls: 2
+IrresponsibleModule:
+  enabled: false
+NestedIterators:
+  max_allowed_nesting: 2
+NilCheck:
+  enabled: false
+PrimaDonnaMethod:
+  enabled: false
+TooManyStatements:
+  max_statements: 30
+UnusedParameters:
+  enabled: false
+UtilityFunction:
+  public_methods_only: true
+
+"app/controllers":
   NestedIterators:
-    max_allowed_nesting: 2
-  TooManyMethods:
-    max_methods: 30
-  TooManyStatements:
-    max_statements: 30
-  UnusedParameters:
     enabled: false
+
+"app/helpers":
   UtilityFunction:
-    public_methods_only: true
+    enabled: false
 
 exclude_paths:
   - vendor
