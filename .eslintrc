@@ -8,6 +8,9 @@
     "browser": true,
     "jquery": true
   },
+  "globals": {
+    "React": true
+  },
   "ecmaFeatures": {
     "jsx": true
   }

@@ -1,0 +1,5 @@
+---
+linter:
+  eslint:
+    options:
+      config: 'config/eslint.json'
