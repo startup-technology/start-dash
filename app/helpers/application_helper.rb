@@ -1,5 +1,4 @@
 module ApplicationHelper
-  # :reek:UtilityFunction
   def current_title(page_title)
     base_title = Settings.sitename
 
