@@ -102,7 +102,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-rails'
   gem 'pry-stack_explorer'
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.0', group: :development
 
   # Logging
   gem 'quiet_assets'
