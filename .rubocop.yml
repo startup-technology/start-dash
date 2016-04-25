@@ -7,7 +7,9 @@ AllCops:
     - "bin/**/*"
     - "spec/**/*"
   DisplayCopNames: true
-  RunRailsCops: true
+
+Rails:
+  Enabled: true
 
 Rails/Output:
   Exclude:
