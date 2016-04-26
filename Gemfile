@@ -85,8 +85,8 @@ group :development, :test do
   gem 'simplecov', require: false
 
   # Code analyze
-  gem 'rubocop'
-  gem 'reek', '~> 3.3.0'
+  gem 'rubocop', '~> 0.39'
+  gem 'reek', '~> 4.0'
   gem 'rails_best_practices'
   gem 'brakeman', require: false
   gem 'bullet'
@@ -98,8 +98,6 @@ group :development, :test do
   # Debugger
   gem 'byebug'
   gem 'better_errors'
-  gem 'hirb'
-  gem 'hirb-unicode'
   gem 'pry'
   gem 'pry-byebug'
   gem 'pry-doc'
