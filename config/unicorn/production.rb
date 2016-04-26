@@ -3,7 +3,7 @@ app_path = '/var/www/my_app_name'
 app_current_path = "#{app_path}/current"
 app_shared_path = "#{app_path}/shared"
 
-working_directory "#{app_current_path}"
+working_directory app_current_path
 pid "#{app_shared_path}/tmp/pids/unicorn.pid"
 
 # listen
