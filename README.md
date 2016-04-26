@@ -19,7 +19,7 @@
 
 ### ユーザー認証
 
-- devise
+- sorcery
 - cancancan
 
 ### テンプレートエンジン
