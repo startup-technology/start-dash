@@ -10,11 +10,9 @@ gem 'jquery-rails'
 # gem 'turbolinks'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
-gem 'react-rails'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'sass-rails'
-gem 'slim-rails'
 gem 'jbuilder', '~> 2.0'
 
 # Authentication
@@ -91,9 +89,7 @@ group :development, :test do
   gem 'brakeman', require: false
   gem 'bullet'
   gem 'coffeelint'
-  gem 'eslint-rails'
   gem 'scss_lint', require: false
-  gem 'slim_lint'
 
   # Debugger
   gem 'byebug'

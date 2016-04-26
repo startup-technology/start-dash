@@ -31,10 +31,6 @@
 
 - draper
 
-### JavaScriptフレームワーク
-
-- React
-
 ### CSSフレームワーク
 
 - Bootstrap3(Sass)
@@ -55,9 +51,8 @@
 - Rails Best Practices
 - Brakeman
 - Bullet
-- ESLint
+- Coffeelint
 - SCSS-Lint
-- Slim-Lint
 
 ### その他
 
