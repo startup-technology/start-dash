@@ -1,6 +1,6 @@
 User.seed(:id,
   { id: 1,
-    email: 'developer@example.com',
-    password: '123456'
+    email: 'user@example.com',
+    crypted_password: User.encrypt('12345678')
   },
 )
