@@ -51,8 +51,8 @@
 - Rails Best Practices
 - Brakeman
 - Bullet
+- Coffeelint
 - SCSS-Lint
-- Slim-Lint
 
 ### その他
 
