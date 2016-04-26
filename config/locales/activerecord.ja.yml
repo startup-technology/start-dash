@@ -1,0 +1,26 @@
+ja:
+  activerecord:
+    models:
+      user: 'ユーザー'
+    attributes:
+      user:
+        email: 'Eメール'
+        password: 'パスワード'
+        password_confirmation: 'パスワード再入力'
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: 'メールアドレスを入力してください'
+              invalid_email_address: 'メールアドレスが正しくありません'
+              not_found: 'メールアドレスが登録されていません'
+            password:
+              blank: 'パスワードを入力してください'
+              invalid: 'パスワードに誤りがあります'
+              too_short: 'パスワードは8文字以上入力してください'
+            password_confirmation:
+              blank: 'パスワードを再入力してください'
+              confirmation: 'パスワードが異なります'
+
+

@@ -18,3 +18,10 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'font-awesome';
+
+.form {
+  @at-root &--auth {
+    @extend .container;
+    max-width: 600px;
+  }
+}

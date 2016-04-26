@@ -16,9 +16,7 @@ gem 'sass-rails'
 gem 'jbuilder', '~> 2.0'
 
 # Authentication
-gem 'devise'
-gem 'devise-i18n'
-# gem 'devise_invitable'
+gem 'sorcery'
 gem 'cancancan'
 
 # Configuration
@@ -51,10 +49,15 @@ gem 'nested_form'
 
 # Soft delete
 gem 'paranoia', '~> 2.0'
+gem 'paranoia_uniqueness_validator'
 
 # Model
 gem 'active_hash'
 gem 'virtus'
+
+# Validation
+gem 'validates_email_format_of'
+gem 'validate_url'
 
 # Decorator
 gem 'draper'

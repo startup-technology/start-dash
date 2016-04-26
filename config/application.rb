@@ -31,7 +31,7 @@ module StartDash
       generator.assets false
       generator.helper false
       generator.decorator false
-      generator.template_engine = :slim
+      generator.template_engine = :erb
     end
   end
 end
