@@ -11,7 +11,7 @@
 
 ### アプリケーションサーバー
 
-- unicorn
+- Puma
 
 ### デプロイ
 
@@ -121,7 +121,7 @@ $ rake db:seed_fu
 ## Run rails server
 
 ```bash
-$ bundle exec rails server
+$ bundle exec rails server Puma
 ```
 
 ## Run sidekiq

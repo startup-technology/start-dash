@@ -63,9 +63,7 @@ gem 'validate_url'
 gem 'draper'
 
 # Application server
-gem 'unicorn'
-gem 'unicorn-rails'
-gem 'unicorn-worker-killer'
+gem 'puma'
 
 # Debugger
 gem 'web-console', '~> 2.0', group: :development
@@ -115,11 +113,11 @@ group :development, :test do
   gem 'migration_comments'
 
   # Deploy
-  gem 'capistrano', '~> 3.4.0'
+  gem 'capistrano', '3.5.0'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
-  gem 'capistrano3-unicorn'
+  gem 'capistrano3-puma'
 end
 
 group :test do
