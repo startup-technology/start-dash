@@ -167,12 +167,6 @@ JavaScriptの自動コンパイル（開発用）
 $ npm run watch
 ```
 
-JavaScriptのコンパイル（リリース用）
-
-```
-$ npm run build
-```
-
 ## How to run the test suite
 
 ```bash
