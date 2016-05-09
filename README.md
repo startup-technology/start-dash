@@ -111,6 +111,12 @@ $ git@github.com:startup-technology/start-dash.git
 $ bundle install --path vendor/bundle
 ```
 
+- npmのインストール
+
+```bash
+$ npm install
+```
+
 ### Configuration
 
 *ファイルの中身はご自身の環境に合わせて適宜変更してください*
