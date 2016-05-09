@@ -31,6 +31,29 @@
 
 - draper
 
+### フロントエンド
+
+- Webpack
+- Babel
+- React
+
+ディレクトリ構成
+
+```
+frontend
+└── assets
+    └── javascripts
+        ├── application.js
+        └── components
+            └── hello.jsx
+
+config/frontend
+├── development
+│   └── webpack.config.js
+└── production
+    └── webpack.config.js
+```
+
 ### CSSフレームワーク
 
 - Bootstrap3(Sass)
@@ -88,6 +111,12 @@ $ git@github.com:startup-technology/start-dash.git
 $ bundle install --path vendor/bundle
 ```
 
+- npmのインストール
+
+```bash
+$ npm install
+```
+
 ### Configuration
 
 *ファイルの中身はご自身の環境に合わせて適宜変更してください*
@@ -128,6 +157,20 @@ $ bundle exec rails server Puma
 
 ```bash
 $ bundle exec sidekiq
+```
+
+## Build JavaScript
+
+JavaScriptのコンパイル
+
+```
+$ npm run build
+```
+
+JavaScriptの自動コンパイル
+
+```
+$ npm run watch
 ```
 
 ## How to run the test suite
