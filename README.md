@@ -31,6 +31,29 @@
 
 - draper
 
+### フロントエンド
+
+- Webpack
+- Babel
+- React
+
+ディレクトリ構成
+
+```
+frontend
+└── assets
+    └── javascripts
+        ├── application.js
+        └── components
+            └── hello.jsx
+
+config/frontend
+├── development
+│   └── webpack.config.js
+└── production
+    └── webpack.config.js
+```
+
 ### CSSフレームワーク
 
 - Bootstrap3(Sass)
@@ -128,6 +151,26 @@ $ bundle exec rails server Puma
 
 ```bash
 $ bundle exec sidekiq
+```
+
+## Build JavaScript
+
+JavaScriptのコンパイル（開発用）
+
+```
+$ npm run build
+```
+
+JavaScriptの自動コンパイル（開発用）
+
+```
+$ npm run watch
+```
+
+JavaScriptのコンパイル（リリース用）
+
+```
+$ npm run build
 ```
 
 ## How to run the test suite
