@@ -155,13 +155,13 @@ $ bundle exec sidekiq
 
 ## Build JavaScript
 
-JavaScriptのコンパイル（開発用）
+JavaScriptのコンパイル
 
 ```
 $ npm run build
 ```
 
-JavaScriptの自動コンパイル（開発用）
+JavaScriptの自動コンパイル
 
 ```
 $ npm run watch
