@@ -160,13 +160,14 @@ $ rake db:seed_fu
 ## Run rails server
 
 ```bash
-$ bundle exec rails server Puma
+$ bundle exec rails server
 ```
 
-## Run sidekiq
+## Run active job
 
 ```bash
-$ bundle exec sidekiq
+$ bundle exec rake resque:work
+$ bundle exec rake resque:scheduler
 ```
 
 ## Build JavaScript

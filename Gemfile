@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.6'
+gem 'rails', '4.2.7'
 gem 'rack-contrib'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'therubyracer'
@@ -64,6 +64,11 @@ gem 'draper'
 
 # Application server
 gem 'puma'
+
+# Background Job
+gem 'resque'
+gem 'resque-scheduler'
+gem 'active_scheduler'
 
 # Debugger
 gem 'web-console', '~> 2.0', group: :development
