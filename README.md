@@ -1,5 +1,11 @@
 # Start Dash
 
+---
+
+※ この項は start-dash リポジトリの説明なのでプロジェクトで使うときは削除してください。 ここから
+
+---
+
 こちらは[株式会社StartupTechnology](http://startup-technology.com/)の開発において、Webアプリ開発の初期にスタートダッシュをかけるために、初期設定を行ったRailsテンプレートです。
 こちらをベースに各自の開発に合った形で調整を行ってください。
 
@@ -24,7 +30,7 @@
 
 ### テンプレートエンジン
 
-- slim
+- erb
 - simple_form
 
 ### Decorator
@@ -81,6 +87,10 @@ config/frontend
 
 - EditorConfig
 - See `Gemfile`.
+
+---
+
+※ この項は start-dash リポジトリの説明なのでプロジェクトで使うときは削除してください。 ここまで
 
 ---
 
