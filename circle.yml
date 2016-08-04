@@ -26,4 +26,4 @@ database:
 
 test:
   override:
-    - bin/rake spec
+    - bundle exec rake spec
