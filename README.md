@@ -26,7 +26,7 @@
 ### ユーザー認証
 
 - sorcery
-- cancancan
+- pundit
 
 ### テンプレートエンジン
 
@@ -35,7 +35,7 @@
 
 ### Decorator
 
-- draper
+- active_decorator
 
 ### フロントエンド
 
@@ -71,7 +71,7 @@ config/frontend
 
 ### バックグラウンドジョブ
 
-- sidekiq
+- resque
 
 ### コード解析
 

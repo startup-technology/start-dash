@@ -15,7 +15,7 @@
 #  index_users_on_email       (email)
 #
 
-class User < ActiveRecord::Base
+class User < ApplicationRecord
   authenticates_with_sorcery!
 
   validates :email,
