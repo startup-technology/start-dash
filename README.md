@@ -35,7 +35,7 @@
 
 ### Decorator
 
-- draper
+- active_decorator
 
 ### フロントエンド
 
