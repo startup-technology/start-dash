@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.7'
-gem 'rack-contrib'
+gem 'rails', '5.0.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'therubyracer'
 
@@ -10,14 +9,14 @@ gem 'jquery-rails'
 # gem 'turbolinks'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'sass-rails'
 gem 'jbuilder', '~> 2.0'
 
 # Authentication
 gem 'sorcery'
-gem 'cancancan'
+gem 'pundit'
 
 # Configuration
 gem 'dotenv-rails'
@@ -48,7 +47,7 @@ gem 'simple_form'
 gem 'nested_form'
 
 # Soft delete
-gem 'paranoia', '~> 2.0'
+gem 'paranoia', '2.2.0.pre'
 gem 'paranoia_uniqueness_validator'
 
 # Model
@@ -60,7 +59,7 @@ gem 'validates_email_format_of'
 gem 'validate_url'
 
 # Decorator
-gem 'draper'
+gem 'active_decorator'
 
 # Application server
 gem 'puma'
@@ -69,9 +68,6 @@ gem 'puma'
 gem 'resque'
 gem 'resque-scheduler'
 gem 'active_scheduler'
-
-# Debugger
-gem 'web-console', '~> 2.0', group: :development
 
 group :development, :test do
   gem 'sqlite3'
@@ -105,9 +101,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-rails'
   gem 'pry-stack_explorer'
-
-  # Logging
-  gem 'quiet_assets'
+  gem 'web-console', '~> 2.0'
 
   # Print debug
   gem 'awesome_print'
