@@ -69,6 +69,9 @@ gem 'resque'
 gem 'resque-scheduler'
 gem 'active_scheduler'
 
+# Debugger
+gem 'web-console', '~> 2.0', group: :development
+
 group :development, :test do
   gem 'sqlite3'
 
@@ -101,7 +104,6 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-rails'
   gem 'pry-stack_explorer'
-  gem 'web-console', '~> 2.0'
 
   # Print debug
   gem 'awesome_print'
