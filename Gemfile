@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.0.0'
+gem 'rails', '5.0.1'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'therubyracer'
 
@@ -23,7 +23,7 @@ gem 'dotenv-rails'
 gem 'config', '~> 1.0.0'
 
 # Database
-gem 'mysql2', '~> 0.3.18'
+gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'redis-rails'
 
 # Seeds
@@ -47,7 +47,7 @@ gem 'simple_form'
 gem 'nested_form'
 
 # Soft delete
-gem 'paranoia', '2.2.0.pre'
+gem 'paranoia'
 gem 'paranoia_uniqueness_validator'
 
 # Model
@@ -70,7 +70,10 @@ gem 'resque-scheduler'
 gem 'active_scheduler'
 
 # Debugger
-gem 'web-console', '~> 2.0', group: :development
+group :development do
+  gem 'web-console', '~> 2.0'
+  gem 'listen'
+end
 
 group :development, :test do
   gem 'sqlite3'

@@ -80,6 +80,8 @@ Rails.application.configure do
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
     config.logger = ActiveSupport::TaggedLogging.new(logger)
+  else
+    config.logger = ActiveSupport::Logger.new('log/production.log', 5, 10 * 1024 * 1024)
   end
 
   # Do not dump schema after migrations.
