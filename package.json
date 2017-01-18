@@ -4,7 +4,8 @@
   "scripts": {
     "release": "webpack --config config/frontend/production/webpack.config.js",
     "build": "webpack --config config/frontend/development/webpack.config.js",
-    "watch": "webpack --watch --config config/frontend/development/webpack.config.js"
+    "watch": "webpack --watch --config config/frontend/development/webpack.config.js",
+    "test": "echo \"No test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
