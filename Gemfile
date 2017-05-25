@@ -1,18 +1,19 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.0.1'
+gem 'rails', '5.1.1'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'therubyracer'
 
 # UI/UX
+gem 'rails-i18n', '~> 5.0.0'
 gem 'jquery-rails'
 # gem 'turbolinks'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'coffee-rails'
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier'
 gem 'sass-rails'
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder'
 
 # Authentication
 gem 'sorcery'
@@ -20,10 +21,10 @@ gem 'pundit'
 
 # Configuration
 gem 'dotenv-rails'
-gem 'config', '~> 1.0.0'
+gem 'config'
 
 # Database
-gem 'mysql2', '>= 0.3.18', '< 0.5'
+gem 'mysql2'
 gem 'redis-rails'
 
 # Seeds
@@ -71,7 +72,7 @@ gem 'active_scheduler'
 
 # Debugger
 group :development do
-  gem 'web-console', '~> 2.0'
+  gem 'web-console'
   gem 'listen'
 end
 
@@ -91,9 +92,9 @@ group :development, :test do
   gem 'simplecov', require: false
 
   # Code analyze
-  gem 'rubocop', '~> 0.39'
-  gem 'reek', '~> 4.0'
-  gem 'rails_best_practices'
+  gem 'rubocop', '~> 0.49'
+  gem 'reek', '~> 4.6.2'
+  gem 'rails_best_practices', '~> 1.18.1'
   gem 'brakeman', require: false
   gem 'bullet'
   gem 'coffeelint'
