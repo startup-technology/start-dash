@@ -11,6 +11,7 @@ gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'sass-rails'
 gem 'uglifier'
+gem 'webpacker'
 
 # UI/UX
 gem 'rails-i18n', '~> 5.0.0'
@@ -70,8 +71,7 @@ gem 'puma'
 
 # Background Job
 gem 'resque'
-gem 'resque-scheduler'
-gem 'active_scheduler'
+gem 'whenever', require: false
 
 # Debugger
 group :development do
@@ -121,11 +121,13 @@ group :development, :test do
   gem 'migration_comments'
 
   # Deploy
-  gem 'capistrano', '3.5.0'
+  gem 'capistrano', '3.8.1'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
   gem 'capistrano3-puma'
+  gem 'capistrano-resque', require: false
+  gem 'capistrano-rails-console'
 end
 
 group :test do

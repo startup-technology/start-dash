@@ -75,3 +75,5 @@ node_modules/
 
 # Webpack
 *.bundle.js
+/public/packs
+/node_modules

@@ -167,7 +167,6 @@ $ bundle exec rails server
 
 ```bash
 $ bundle exec rake resque:work
-$ bundle exec rake resque:scheduler
 ```
 
 ## Build JavaScript
