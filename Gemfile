@@ -4,16 +4,19 @@ gem 'rails', '5.1.3'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'therubyracer'
 
+# Assets
+gem 'bootstrap-sass'
+gem 'coffee-rails'
+gem 'font-awesome-rails'
+gem 'jquery-rails'
+gem 'sass-rails'
+gem 'uglifier'
+
 # UI/UX
 gem 'rails-i18n', '~> 5.0.0'
-gem 'jquery-rails'
 # gem 'turbolinks'
-gem 'bootstrap-sass'
-gem 'font-awesome-rails'
-gem 'coffee-rails'
-gem 'uglifier'
-gem 'sass-rails'
 gem 'jbuilder'
+gem 'meta-tags'
 
 # Authentication
 gem 'sorcery'

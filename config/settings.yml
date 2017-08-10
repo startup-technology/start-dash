@@ -1,1 +1,12 @@
 sitename: Start Dash
+site:
+  name: Start Dash
+  page_title: Start Dash
+  page_description: Ruby on Rails 雛形
+  page_keywords:
+    - Ruby
+    - Rails
+  meta:
+    ogp:
+      type: website
+      image_path: https://dummyimage.com/1200x630/888/fff
