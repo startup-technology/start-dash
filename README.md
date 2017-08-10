@@ -270,15 +270,3 @@ $ bundle exec slim-lint
 ```bash
 $ rake db:reset_all
 ```
-
-### Page title helper
-
-- See `app/helpers/application_helper.rb`
-
-```
-/! layout
-title = current_title(yield(:title))
-
-/! template
-- provide(:title, 'ページタイトル')
-```
