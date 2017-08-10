@@ -13,7 +13,7 @@
 
 ### 日本語設定
 
-- application.rb
+- config/initializers/locales.rb
 
 ### アプリケーションサーバー
 
