@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.1.1'
+gem 'rails', '5.1.3'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'therubyracer'
 
