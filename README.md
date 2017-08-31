@@ -39,26 +39,8 @@
 
 ### フロントエンド
 
-- Webpack
-- Babel
+- Webpacker
 - React
-
-ディレクトリ構成
-
-```
-frontend
-└── assets
-    └── javascripts
-        ├── application.js
-        └── components
-            └── hello.jsx
-
-config/frontend
-├── development
-│   └── webpack.config.js
-└── production
-    └── webpack.config.js
-```
 
 ### CSSフレームワーク
 
@@ -106,6 +88,8 @@ config/frontend
 
 - MySQL >= 5.5
 - Redis
+- Node.js >= 6.0.0
+- Yarn >= 0.20.1
 
 ## Project initiation
 
