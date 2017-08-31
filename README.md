@@ -169,21 +169,19 @@ $ bundle exec rails server
 $ bundle exec rake resque:work
 ```
 
-## Build JavaScript
+## Webpacker
 
 JavaScriptのコンパイル
 
 ```
-$ npm run build
+$ ./bin/webpack
 ```
 
-JavaScriptの自動コンパイル
+サーバーの起動
 
 ```
-$ npm run watch
+$ ./bin/webpack-dev-server
 ```
-
-## How to run the test suite
 
 ```bash
 $ spring rspec spec/[対象ファイル]

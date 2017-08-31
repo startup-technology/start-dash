@@ -1,0 +1,4 @@
+linter:
+  eslint:
+    npm_install: true
+    dir: app/javascript
