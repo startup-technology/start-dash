@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.5.0'
+lock '3.8.1'
 
 set :application, 'my_app_name'
 set :repo_url, 'git@github.com:startup-technology/my_app_name.git'
@@ -50,6 +50,7 @@ namespace :deploy do
   task :restart do
     on roles(:app), in: :sequence, wait: 15 do
       invoke 'puma:restart'
+      invoke 'resque:restart'
     end
   end
 
