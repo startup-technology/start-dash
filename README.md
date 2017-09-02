@@ -30,7 +30,7 @@
 
 ### テンプレートエンジン
 
-- erb
+- slim
 - simple_form
 
 ### Decorator
