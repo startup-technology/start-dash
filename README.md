@@ -200,7 +200,7 @@ $ bundle exec brakeman
 ### ESLint
 
 ```bash
-$ rake eslint:run
+$ npm run lint
 ```
 
 ### SCSS-Lint

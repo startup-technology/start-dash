@@ -18,14 +18,15 @@ gem 'rails-i18n', '~> 5.0.0'
 # gem 'turbolinks'
 gem 'jbuilder'
 gem 'meta-tags'
+gem 'slim-rails'
 
 # Authentication
-gem 'sorcery'
 gem 'pundit'
+gem 'sorcery'
 
 # Configuration
-gem 'dotenv-rails'
 gem 'config'
+gem 'dotenv-rails'
 
 # Database
 gem 'mysql2'
@@ -42,14 +43,15 @@ gem 'mini_magick'
 
 # Search/Pagination
 gem 'kaminari'
+gem 'kaminari-i18n'
 gem 'ransack'
 
 # Breadcrumbs
 gem 'gretel'
 
 # Form
+gem 'cocoon'
 gem 'simple_form'
-gem 'nested_form'
 
 # Soft delete
 gem 'paranoia'
@@ -60,8 +62,8 @@ gem 'active_hash'
 gem 'virtus'
 
 # Validation
-gem 'validates_email_format_of'
 gem 'validate_url'
+gem 'validates_email_format_of'
 
 # Decorator
 gem 'active_decorator'
@@ -75,8 +77,8 @@ gem 'whenever', require: false
 
 # Debugger
 group :development do
-  gem 'web-console'
   gem 'listen'
+  gem 'web-console'
 end
 
 group :development, :test do
@@ -90,22 +92,23 @@ group :development, :test do
   gem 'spring-commands-rspec'
 
   # Test
-  gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'rspec-rails'
   gem 'simplecov', require: false
 
   # Code analyze
-  gem 'rubocop', '~> 0.49'
-  gem 'reek', '~> 4.6.2'
-  gem 'rails_best_practices', '~> 1.18.1'
   gem 'brakeman', require: false
   gem 'bullet'
   gem 'coffeelint'
+  gem 'rails_best_practices', '~> 1.18.1'
+  gem 'reek', '~> 4.6.2'
+  gem 'rubocop', '~> 0.49'
   gem 'scss_lint', require: false
+  gem 'slim_lint'
 
   # Debugger
-  gem 'byebug'
   gem 'better_errors'
+  gem 'byebug'
   gem 'pry'
   gem 'pry-byebug'
   gem 'pry-doc'
@@ -122,12 +125,12 @@ group :development, :test do
 
   # Deploy
   gem 'capistrano', '3.8.1'
-  gem 'capistrano-rails'
-  gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
-  gem 'capistrano3-puma'
-  gem 'capistrano-resque', require: false
+  gem 'capistrano-rails'
   gem 'capistrano-rails-console'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-resque', require: false
+  gem 'capistrano3-puma'
 end
 
 group :test do
