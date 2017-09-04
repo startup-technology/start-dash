@@ -11,10 +11,6 @@
 
 ## Features
 
-### 日本語設定
-
-- config/initializers/locales.rb
-
 ### アプリケーションサーバー
 
 - Puma
