@@ -38,8 +38,6 @@ set :rbenv_type, :user
 set :rbenv_ruby, File.read('.ruby-version').strip
 set :rbenv_path, '/usr/local/rbenv'
 
-# set :default_env, RBENV_ROOT: '/usr/local/rbenv', RBENV_VERSION: File.read('.ruby-version').strip
-
 set :bundle_jobs, 4
 
 after 'deploy:publishing', 'deploy:restart'
