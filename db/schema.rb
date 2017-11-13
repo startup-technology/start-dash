@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20171113143241) do
 
-  create_table "authentications", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "authentications", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC" do |t|
     t.integer "user_id", null: false
     t.string "provider"
     t.string "uid", null: false
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20171113143241) do
     t.index ["provider", "uid"], name: "index_authentications_on_provider_and_uid"
   end
 
-  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC" do |t|
     t.string "name", null: false
     t.string "email", null: false
     t.string "crypted_password"
