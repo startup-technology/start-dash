@@ -5,7 +5,7 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
-require 'factory_girl'
+require 'factory_bot'
 require 'shoulda-matchers'
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -38,7 +38,7 @@ RSpec.configure do |config|
   # config.use_transactional_fixtures = true
 
   # Include Factory Girl syntax to simplify calls to factories
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 
   # Include custom login macros
   # config.include LoginMacros
@@ -51,7 +51,7 @@ RSpec.configure do |config|
   end
 
   config.before :all do
-    FactoryGirl.reload
+    FactoryBot.reload
   end
 
   config.around(:each) do |example|

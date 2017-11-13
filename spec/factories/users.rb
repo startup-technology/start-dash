@@ -15,7 +15,7 @@
 #  index_users_on_email       (email)
 #
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :user do
     
   end
