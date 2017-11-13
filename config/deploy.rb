@@ -1,14 +1,14 @@
 # config valid only for current version of Capistrano
-lock '3.8.1'
+lock '3.9.0'
 
-set :application, 'my_app_name'
-set :repo_url, 'git@github.com:startup-technology/my_app_name.git'
+set :application, 'start-dash'
+set :repo_url, 'git@github.com:startup-technology/start-dash.git'
 
 # Default branch is :master
 set :branch, ENV['BRANCH'] || 'master'
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/var/www/my_app_name'
+set :deploy_to, '/var/www/start-dash'
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -34,32 +34,35 @@ set :linked_dirs, %w(bin log tmp/pids tmp/cache tmp/sockets vendor/bundle)
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
-set :rbenv_type, :system
+set :rbenv_type, :user
 set :rbenv_ruby, File.read('.ruby-version').strip
-set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
-set :rbenv_map_bins, %w(rake gem bundle ruby rails)
-set :rbenv_roles, :all
+set :rbenv_path, '/usr/local/rbenv'
 
-set :delayed_job_roles, [:worker]
-set :delayed_job_workers, 2
+# set :default_env, RBENV_ROOT: '/usr/local/rbenv', RBENV_VERSION: File.read('.ruby-version').strip
 
 set :bundle_jobs, 4
 
 after 'deploy:publishing', 'deploy:restart'
+after 'deploy:restart', 'resque:restart'
+before 'deploy:migrate', 'deploy:db_create'
 namespace :deploy do
-  task :restart do
-    on roles(:app), in: :sequence, wait: 15 do
-      invoke 'puma:restart'
-      invoke 'resque:restart'
-    end
-  end
-
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:
       # within release_path do
       #   execute :rake, 'cache:clear'
       # end
+    end
+  end
+
+  desc 'Create database'
+  task :db_create do
+    on roles(:db) do
+      with rails_env: fetch(:rails_env) do
+        within release_path do
+          execute :bundle, :exec, :rake, 'db:create'
+        end
+      end
     end
   end
 end

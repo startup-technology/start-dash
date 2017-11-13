@@ -124,7 +124,7 @@ group :development, :test do
   gem 'migration_comments'
 
   # Deploy
-  gem 'capistrano', '3.8.1'
+  gem 'capistrano', '3.9.0'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano-rails-console'
