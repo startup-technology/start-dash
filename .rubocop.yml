@@ -32,7 +32,7 @@ Metrics/MethodLength:
   CountComments: false
   Max: 30
 
-Style/AccessorMethodName:
+Naming/AccessorMethodName:
   Exclude:
     - "app/controllers/**/*"
 
