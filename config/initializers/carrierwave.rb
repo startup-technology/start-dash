@@ -1,18 +1,15 @@
-CarrierWave.configure do |config|
-  if Rails.env.test?
-    config.storage = :file
-    config.root = "#{Rails.root}/tmp"
-    config.cache_dir = "#{Rails.root}/tmp/images"
-  else
-    config.fog_credentials = {
-      provider: 'AWS',
-      aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
-      aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
-      region: ENV['AWS_REGION']
-    }
-    config.storage = :fog
-    config.fog_public = true
-    config.fog_directory = ENV['AWS_S3_BUCKET']
-    config.fog_attributes = { 'Cache-Control' => 'max-age=31536000' }
+if Settings.carrierwave.present?
+  CarrierWave.configure do |config|
+    if Settings.carrierwave.fog_credentials.present?
+      config.fog_credentials = Settings.carrierwave.fog_credentials.to_h
+      config.fog_directory = Settings.carrierwave.fog_directory
+      config.fog_public = Settings.carrierwave.fog_public if Settings.carrierwave.fog_public.present?
+      config.fog_attributes = Settings.carrierwave.fog_attributes.to_h if Settings.carrierwave.fog_attributes.present?
+      config.asset_host = Settings.carrierwave.asset_host if Settings.carrierwave.asset_host.present?
+    else
+      config.storage = :file
+      config.root = "#{Rails.root}/tmp"
+      config.cache_dir = "#{Rails.root}/tmp/images"
+    end
   end
 end

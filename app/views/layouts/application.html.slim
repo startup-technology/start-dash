@@ -6,5 +6,8 @@ html
     = javascript_include_tag 'application'
     = csrf_meta_tags
   body
-    .container
+    = render 'layouts/navbar'
+    = render 'layouts/flash_message'
+    main.container
       = yield
+    = yield 'scripts'

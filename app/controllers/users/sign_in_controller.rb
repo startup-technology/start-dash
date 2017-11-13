@@ -16,6 +16,6 @@ class Users::SignInController < ApplicationController
       return render :show
     end
 
-    redirect_back_or_to root_url
+    redirect_back_or_to root_url, notice: 'ログインしました'
   end
 end

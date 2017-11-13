@@ -128,7 +128,7 @@ $ cp .env.default .env
 ### Database creation
 
 ```bash
-$ rake db:create db:migrate
+$ rake db:create db:reset
 ```
 
 ### Database initialization

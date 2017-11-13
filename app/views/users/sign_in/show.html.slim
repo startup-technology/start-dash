@@ -1,11 +1,19 @@
 - set_meta_tags title: 'Sign in'
-.page-header.text-center
-  h1
-    | Sign in
+
+.page-header
+  h1 Sign in
+
 = simple_form_for @user, url: users_sign_in_path do |f|
-  .form--auth
-    .form--auth__inputs
-      = f.input :email, as: :email
-      = f.input :password, as: :password
-    .form--auth__actions
-      = f.button :submit, 'Sign in'
+  = f.error_notification
+  .form-inputs
+    = f.input :email, as: :email
+    = f.input :password, as: :password
+  .form-actions
+    = f.button :submit, 'Sign in'
+
+hr
+
+= link_to users_authentication_path(:facebook), class: %w[btn btn-facebook] do
+  i.fa.fa-facebook
+  '
+  | Facebookでログイン

@@ -3,11 +3,12 @@
 # Table name: users
 #
 #  id               :integer          not null, primary key
+#  name             :string(255)      not null
 #  email            :string(255)      not null
 #  crypted_password :string(255)
 #  deleted_at       :datetime
-#  created_at       :datetime
-#  updated_at       :datetime
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
 #
 # Indexes
 #
@@ -17,6 +18,16 @@
 
 class User < ApplicationRecord
   authenticates_with_sorcery!
+  acts_as_paranoid
+
+  has_many :authentications, dependent: :destroy
+
+  accepts_nested_attributes_for :authentications
+
+
+  validates :name,
+            presence: true,
+            length: { maximum: 32 }
 
   validates :email,
             uniqueness_without_deleted: true,
@@ -31,6 +42,9 @@ class User < ApplicationRecord
             presence: true,
             if: :new_record_or_changes_password
 
+  def authenticated?(provider)
+    authentications.exists?(provider: provider)
+  end
   private
 
   def new_record_or_changes_password

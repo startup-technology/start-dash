@@ -1,6 +1,0 @@
-- if logged_in?
-  = current_user.email
-  = link_to 'Sign out', users_sign_out_path, class: %w(btn btn-link), method: :delete
-- else
-  = link_to 'Sign up', users_sign_up_path, class: %w(btn btn-link)
-  = link_to 'Sign in', users_sign_in_path, class: %w(btn btn-link)

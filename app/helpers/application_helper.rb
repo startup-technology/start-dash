@@ -18,4 +18,8 @@ module ApplicationHelper
       }
     }
   end
+
+  def flash_class(key)
+    { alert: 'danger', notice: 'success' }.fetch(key.to_sym) { 'danger' }
+  end
 end

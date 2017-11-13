@@ -19,9 +19,24 @@
 @import 'bootstrap';
 @import 'font-awesome';
 
-.form {
-  @at-root &--auth {
-    @extend .container;
-    max-width: 600px;
+.btn {
+  text-transform: none;
+
+  &.btn-facebook {
+    color: #fff;
+    background-color: $brand-facebook;
+
+    &:hover {
+      background-color: darken($brand-facebook, 6%);
+    }
+  }
+
+  &.btn-twitter {
+    color: #fff;
+    background-color: $brand-twitter;
+
+    &:hover {
+      background-color: darken($brand-twitter, 6%);
+    }
   }
 }

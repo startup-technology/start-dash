@@ -13,12 +13,12 @@ class Users::SignUpController < ApplicationController
 
     auto_login(@user)
 
-    redirect_to root_url
+    redirect_to root_url, notice: 'ユーザー登録が完了しました'
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
 end

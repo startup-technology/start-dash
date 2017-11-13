@@ -3,11 +3,12 @@
 # Table name: users
 #
 #  id               :integer          not null, primary key
+#  name             :string(255)      not null
 #  email            :string(255)      not null
 #  crypted_password :string(255)
 #  deleted_at       :datetime
-#  created_at       :datetime
-#  updated_at       :datetime
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
 #
 # Indexes
 #

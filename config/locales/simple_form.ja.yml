@@ -29,3 +29,6 @@ ja:
     # prompts:
     #   defaults:
     #     age: 'Select your age'
+    labels:
+      defaults:
+        name: '名前'
