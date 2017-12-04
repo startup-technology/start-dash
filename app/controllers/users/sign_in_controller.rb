@@ -1,6 +1,6 @@
 class Users::SignInController < ApplicationController
   skip_before_action :require_login
-  before_action -> { redirect_to :back if logged_in? }
+  before_action -> { redirect_back(fallback_location: root_url) if logged_in? }
 
   def show
     @user = User.new
