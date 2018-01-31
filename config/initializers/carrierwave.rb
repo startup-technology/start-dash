@@ -1,6 +1,6 @@
 if Settings.carrierwave.present?
   CarrierWave.configure do |config|
-    if Settings.carrierwave.fog_credentials.present?
+    if Settings.carrierwave.fog_credentials
       config.fog_credentials = Settings.carrierwave.fog_credentials.to_h
       config.fog_directory = Settings.carrierwave.fog_directory
       config.fog_public = Settings.carrierwave.fog_public if Settings.carrierwave.fog_public.present?

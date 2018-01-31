@@ -1,0 +1,2 @@
+carrierwave:
+  fog_credentials: false
