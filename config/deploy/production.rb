@@ -2,7 +2,7 @@ set :stage, :production
 set :branch, 'master'
 set :rails_env, 'production'
 set :migration_role, 'db'
-set :deploy_to, '/var/www/start-dash'
+set :deploy_to, '/var/www/start_dash'
 set :linked_dirs, %w[log tmp/backup tmp/pids tmp/cache tmp/sockets vendor/bundle node_modules public/packs]
 set :workers, '*' => 2
 

@@ -8,7 +8,7 @@ set :repo_url, 'git@github.com:startup-technology/start-dash.git'
 set :branch, ENV['BRANCH'] || 'master'
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/var/www/start-dash'
+set :deploy_to, '/var/www/start_dash'
 
 # Default value for :scm is :git
 # set :scm, :git
