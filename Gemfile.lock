@@ -183,6 +183,8 @@ GEM
       dry-equalizer (~> 0.2)
       dry-logic (~> 0.4, >= 0.4.0)
       dry-types (~> 0.12.0)
+    enum_help (0.0.17)
+      activesupport (>= 3.0.0)
     equalizer (0.0.11)
     erubi (1.7.0)
     erubis (2.7.0)
@@ -739,6 +741,7 @@ DEPENDENCIES
   config
   database_cleaner
   dotenv-rails
+  enum_help
   factory_bot_rails
   faker
   fog

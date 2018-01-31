@@ -61,6 +61,7 @@ gem 'paranoia_uniqueness_validator'
 
 # Model
 gem 'active_hash'
+gem 'enum_help'
 gem 'virtus'
 
 # Validation
