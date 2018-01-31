@@ -104,7 +104,7 @@ $ bundle install --path vendor/bundle
 - npmのインストール
 
 ```bash
-$ npm install
+$ yarn install
 ```
 
 ### Configuration
@@ -128,13 +128,7 @@ $ cp .env.default .env
 ### Database creation
 
 ```bash
-$ rake db:create db:reset
-```
-
-### Database initialization
-
-```bash
-$ rake db:seed_fu
+$ bundle exec rails db:reset
 ```
 
 ## Run rails server
@@ -146,7 +140,7 @@ $ bundle exec rails server
 ## Run active job
 
 ```bash
-$ bundle exec rake resque:work
+$ bundle exec rails resque:work
 ```
 
 ## Webpacker
@@ -237,13 +231,3 @@ $ bundle exec slim-lint
 /letter_opener
 ```
 
-## Development tasks
-
-### Reset database
-
-- Execute db:drop, db:db:create, db:migrate, db:seed_fu
-- See `lib/tasks/db/rest_all.rake`
-
-```bash
-$ rake db:reset_all
-```
