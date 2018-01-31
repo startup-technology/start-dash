@@ -24,7 +24,6 @@ class User < ApplicationRecord
 
   accepts_nested_attributes_for :authentications
 
-
   validates :name,
             presence: true,
             length: { maximum: 32 }
@@ -45,6 +44,7 @@ class User < ApplicationRecord
   def authenticated?(provider)
     authentications.exists?(provider: provider)
   end
+
   private
 
   def new_record_or_changes_password

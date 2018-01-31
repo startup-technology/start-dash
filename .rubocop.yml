@@ -2,10 +2,11 @@
 
 AllCops:
   Exclude:
-    - "vendor/**/*"
-    - "db/**/*"
-    - "bin/**/*"
-    - "spec/**/*"
+    - 'vendor/**/*'
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'spec/**/*'
+    - 'node_modules/**/*'
   DisplayCopNames: true
 
 Rails:
@@ -13,10 +14,16 @@ Rails:
 
 Rails/Output:
   Exclude:
-    - "config/unicorn/**/*"
+    - 'config/unicorn/**/*'
 
 Metrics/AbcSize:
   Max: 30
+
+Metrics/BlockLength:
+  Max: 30
+  Exclude:
+    - 'Gemfile'
+    - 'config/**/*'
 
 Metrics/ClassLength:
   CountComments: false
@@ -34,7 +41,7 @@ Metrics/MethodLength:
 
 Naming/AccessorMethodName:
   Exclude:
-    - "app/controllers/**/*"
+    - 'app/controllers/**/*'
 
 Style/AsciiComments:
   Enabled: false

@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.1.3'
+gem 'rails', '5.1.4'
+
+gem 'bootsnap', require: false
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'therubyracer'
 
@@ -102,7 +104,7 @@ group :development, :test do
   gem 'coffeelint'
   gem 'rails_best_practices', '~> 1.18.1'
   gem 'reek', '~> 4.6.2'
-  gem 'rubocop', '~> 0.49'
+  gem 'rubocop'
   gem 'scss_lint', require: false
   gem 'slim_lint'
 

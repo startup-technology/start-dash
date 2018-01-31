@@ -31,7 +31,7 @@ class Users::AuthenticationsController < ApplicationController
         auto_login(@user)
 
         redirect_to return_to
-      rescue => e
+      rescue StandardError => e
         logger.warn "[Users::AuthenticationsController#callback] #{e.message}"
         redirect_to return_to, alert: 'ログインに失敗しました'
       end

@@ -8,8 +8,8 @@ if Settings.carrierwave.present?
       config.asset_host = Settings.carrierwave.asset_host if Settings.carrierwave.asset_host.present?
     else
       config.storage = :file
-      config.root = "#{Rails.root}/tmp"
-      config.cache_dir = "#{Rails.root}/tmp/images"
+      config.root = Rails.root.join('tmp')
+      config.cache_dir = Rails.root.join('tmp', 'images')
     end
   end
 end
