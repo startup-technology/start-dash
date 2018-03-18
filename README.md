@@ -65,6 +65,7 @@
 
 - EditorConfig
 - See `Gemfile`.
+- Github Pull Request Template `.github/PULL_REQUEST_TEMPLATE.md`
 
 ---
 
