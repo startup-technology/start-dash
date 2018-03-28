@@ -1,7 +1,8 @@
 RAILS_ROOT = File.expand_path(File.dirname(__FILE__) + '/../')
 
 God.watch do |w|
-  w.name = "puma"
+  w.name = 'puma'
+  w.group = 'rails'
 
   w.env = {
     'RAILS_ROOT' => RAILS_ROOT,
@@ -13,7 +14,7 @@ God.watch do |w|
   w.stop = "cd #{RAILS_ROOT} && bundle exec pumactl -S #{RAILS_ROOT}/tmp/pids/puma.state -F #{RAILS_ROOT}/config/puma.rb stop"
   w.restart = "cd #{RAILS_ROOT} && bundle exec pumactl -S #{RAILS_ROOT}/tmp/pids/puma.state -F #{RAILS_ROOT}/config/puma.rb restart"
 
-  w.pid_file = File.join(RAILS_ROOT, "log/puma.pid")
+  w.pid_file = File.join(RAILS_ROOT, 'log/puma.pid')
 
   w.keepalive
 end
