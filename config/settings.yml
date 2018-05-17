@@ -26,7 +26,8 @@ session_store:
   key: _session
   expire_after: <%= 1.day %>
 resque:
-  redis: <%= ENV.fetch('REDIS_QUEUE URL') { '' } %>
+  redis:
+    url: <%= ENV.fetch('REDIS_QUEUE URL') { '' } %>
 sorcery:
   facebook:
     key: <%= ENV.fetch('FACEBOOK_APP_ID') { '' } %>
