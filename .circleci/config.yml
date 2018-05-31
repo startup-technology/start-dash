@@ -42,7 +42,6 @@ jobs:
           paths:
             - ~/.cache/yarn
       - run: dockerize -wait tcp://localhost:3306 -timeout 1m
-      - run: touch .env
       - run: cp -v config/database.ci.yml config/database.yml
       - run: bundle exec rails db:create db:schema:load --trace
       - run: bundle exec rspec --format progress
