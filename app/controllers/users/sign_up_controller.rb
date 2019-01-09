@@ -9,7 +9,7 @@ class Users::SignUpController < ApplicationController
   def create
     @user = User.create(user_params)
 
-    return render :show if @user.errors.present?
+    return render :show, status: :unprocessable_entity if @user.errors.present?
 
     auto_login(@user)
 

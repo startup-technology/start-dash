@@ -1,6 +1,7 @@
+ruby '2.5.3'
 source 'https://rubygems.org'
 
-gem 'rails', '5.1.4'
+gem 'rails', '5.2.2'
 
 gem 'bootsnap', require: false
 gem 'sdoc', '~> 0.4.0', group: :doc
@@ -85,8 +86,6 @@ group :development do
 end
 
 group :development, :test do
-  gem 'sqlite3'
-
   # Email
   gem 'letter_opener_web'
 
@@ -97,13 +96,15 @@ group :development, :test do
   # Test
   gem 'factory_bot_rails'
   gem 'rspec-rails'
+  gem 'rspec-request_describer'
   gem 'simplecov', require: false
+  gem 'rspec_junit_formatter'
 
   # Code analyze
   gem 'brakeman', require: false
   gem 'bullet'
   gem 'coffeelint'
-  gem 'rails_best_practices', '~> 1.18.1'
+  gem 'rails_best_practices'
   gem 'reek', '~> 4.6.2'
   gem 'rubocop'
   gem 'scss_lint', require: false
