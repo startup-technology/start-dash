@@ -98,6 +98,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rspec-request_describer'
   gem 'simplecov', require: false
+  gem 'rspec_junit_formatter'
 
   # Code analyze
   gem 'brakeman', require: false
