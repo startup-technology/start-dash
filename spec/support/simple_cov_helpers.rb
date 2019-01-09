@@ -36,7 +36,7 @@ class SimpleCovHelpers
   end
 
   def merge_results
-    results = all_results.map { |file| SimpleCov::Result.from_hash(JSON.parse(File.read(file))) }
+    results = all_results.map { |file| SimpleCov::Result.from_hash(JSON.parse(File.read(file)).tap{|js| puts js}) }
     SimpleCov::ResultMerger.merge_results(*results).tap do |result|
       SimpleCov::ResultMerger.store_result(result)
     end
