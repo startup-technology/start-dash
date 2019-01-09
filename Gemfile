@@ -96,6 +96,7 @@ group :development, :test do
   # Test
   gem 'factory_bot_rails'
   gem 'rspec-rails'
+  gem 'rspec-request_describer'
   gem 'simplecov', require: false
 
   # Code analyze

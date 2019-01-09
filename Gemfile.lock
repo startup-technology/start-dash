@@ -587,6 +587,8 @@ GEM
       rspec-expectations (~> 3.8.0)
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
+    rspec-request_describer (0.2.2)
+      actionpack (>= 5.0.0)
     rspec-support (3.8.0)
     rubocop (0.52.1)
       parallel (~> 1.10)
@@ -789,6 +791,7 @@ DEPENDENCIES
   reek (~> 4.6.2)
   resque
   rspec-rails
+  rspec-request_describer
   rubocop
   sass-rails
   scss_lint
