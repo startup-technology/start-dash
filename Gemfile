@@ -1,6 +1,7 @@
+ruby '2.5.3'
 source 'https://rubygems.org'
 
-gem 'rails', '5.1.4'
+gem 'rails', '5.2.2'
 
 gem 'bootsnap', require: false
 gem 'sdoc', '~> 0.4.0', group: :doc
@@ -85,8 +86,6 @@ group :development do
 end
 
 group :development, :test do
-  gem 'sqlite3'
-
   # Email
   gem 'letter_opener_web'
 
