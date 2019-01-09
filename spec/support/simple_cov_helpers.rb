@@ -1,7 +1,7 @@
 require "simplecov"
 
 class SimpleCovHelpers
-  SKIPPED_FILES = %w(/app/controllers....etc.)
+  SKIPPED_FILES = %w()
 
   class << self
     def report_coverage(base_dir: './coverage_results')
