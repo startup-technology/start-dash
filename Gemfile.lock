@@ -504,13 +504,13 @@ GEM
     rails-i18n (5.0.4)
       i18n (~> 0.7)
       railties (~> 5.0)
-    rails_best_practices (1.18.1)
+    rails_best_practices (1.19.4)
       activesupport
-      code_analyzer (>= 0.4.3)
+      code_analyzer (>= 0.4.8)
       erubis
       i18n
       json
-      require_all
+      require_all (~> 2.0)
       ruby-progressbar
     railties (5.2.2)
       actionpack (= 5.2.2)
@@ -785,7 +785,7 @@ DEPENDENCIES
   pundit
   rails (= 5.2.2)
   rails-i18n (~> 5.0.0)
-  rails_best_practices (~> 1.18.1)
+  rails_best_practices
   ransack
   redis-rails
   reek (~> 4.6.2)

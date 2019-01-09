@@ -103,7 +103,7 @@ group :development, :test do
   gem 'brakeman', require: false
   gem 'bullet'
   gem 'coffeelint'
-  gem 'rails_best_practices', '~> 1.18.1'
+  gem 'rails_best_practices'
   gem 'reek', '~> 4.6.2'
   gem 'rubocop'
   gem 'scss_lint', require: false

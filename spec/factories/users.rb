@@ -2,7 +2,7 @@
 #
 # Table name: users
 #
-#  id               :integer          not null, primary key
+#  id               :bigint(8)        not null, primary key
 #  name             :string(255)      not null
 #  email            :string(255)      not null
 #  crypted_password :string(255)
@@ -18,6 +18,9 @@
 
 FactoryBot.define do
   factory :user do
-    
+    name { Faker::Name.name }
+    email { Faker::Internet.email }
+    password { 'password' }
+    password_confirmation { 'password' }
   end
 end
